@@ -31,12 +31,11 @@
         var client_w = document.document.clientWidth || document.body.clientWidth;
         var html = document.getElementsByTagName('html');
         html.style.width = (client_w / ui_w) * 10 + 'px';
-
     }
     // 防抖
     var timer = null;
     window.onload = function () {
         clearTimeout(timer);
-        set(timer, 300);
+        setTimeout(timer, 300);
     }
 </script>
