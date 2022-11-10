@@ -1,0 +1,62 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 10px;
+    height: 100%;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    // background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &>header {
+        width: 100%;
+        height: 5rem;
+        background-color: chocolate;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 5rem;
+        color: white;
+    }
+    &>main{
+        flex: 1;
+        width: 100%;
+        // background-color: rgb(134, 182, 39);
+        font-size: 2rem;
+        text-align: center;
+        line-height: 5rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        &>.left{
+            flex-grow: 1;//也可以简化为flex:1;
+            background-color: rgb(191, 180, 25);
+        }
+        &>.center{
+            flex-grow: 3;//也可以简化为flex:1;
+            background-color: rgb(25, 158, 191);
+        }
+        &>.right{
+            flex-grow: 1;//也可以简化为flex:1;
+            background-color: rgb(191, 25, 25);
+        }
+    }
+    &>footer{
+        background-color: rgb(134, 182, 39);
+        font-size: 2rem;
+        text-align: center;
+        line-height: 5rem;
+        color: white;
+    }
+}
