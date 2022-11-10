@@ -1,0 +1,66 @@
+/* 清除默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 10px;
+}
+.box {
+  width: 60rem;
+  height: 20rem;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #bfbaba;
+}
+.box > .left {
+  flex: 2;
+  width: 12rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.box > .left > img {
+  flex: 1;
+  width: 100%;
+}
+.box > .center {
+  flex: 3;
+  width: 20rem;
+  height: 20rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+.box > .center > p {
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+.box > .right {
+  flex: 2;
+  width: 10rem;
+  height: 20rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.box > .right > button {
+  width: 7rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  color: white;
+  background-color: #ff0103;
+  border-radius: 0.5rem;
+  border: none;
+}

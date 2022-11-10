@@ -1,0 +1,66 @@
+/* 清除默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 10px;
+}
+.box {
+  width: 60rem;
+  height: 20rem;
+  margin: 5rem auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid gray;
+}
+.box > .left {
+  width: 20rem;
+  height: 20rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.box > .left > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.box > .right {
+  width: 40rem;
+  height: 20rem;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.box > .right > .top {
+  font-size: 2.4rem;
+  line-height: 5rem;
+  flex: 1;
+}
+.box > .right > .center {
+  flex: 1;
+}
+.box > .right > .center > span {
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  line-height: 5rem;
+}
+.box > .right > .bottom {
+  width: 12rem;
+  height: 4rem;
+  text-align: center;
+  flex: 1;
+}
+.box > .right > .bottom > button {
+  width: 12rem;
+  height: 4rem;
+  font-size: 2rem;
+  color: white;
+  line-height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #87ceeb;
+}

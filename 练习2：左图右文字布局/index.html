@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>左图右文</title>
+    <link rel="stylesheet" href="./less/index.css">
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            <img src="./images/s8.jpg" alt="">
+        </div>
+        <div class="right">
+            <div class="top">
+                <p>三星 Galaxy S8(6G 64G)谜夜黑</p>
+            </div>
+            <div class="center">
+                <span>总人数9999</span>
+            <span>已购人数9933</span>
+            </div>
+            <div class="bottom" >
+                <button>立即购买</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function setRem() {
+        // 设计宽度和设备宽度
+        var ui_w = 375;
+        var client_w = document.document.clientWidth || document.body.clientWidth;
+        var html = document.getElementsByTagName('html');
+        html.style.width = (client_w / ui_w) * 10 + 'px';
+
+    }
+    // 防抖
+    var timer = null;
+    window.onload = function () {
+        clearTimeout(timer);
+        set(timer, 300);
+    }
+</script>
